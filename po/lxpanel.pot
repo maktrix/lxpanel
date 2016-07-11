@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-22 17:39+0100\n"
+"POT-Creation-Date: 2016-07-11 15:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #. { "configure", N_("Preferences"), configure },
-#: ../src/configurator.c:50 ../src/gtk-run.c:377 ../plugins/menu.c:832
+#: ../src/configurator.c:50 ../src/gtk-run.c:377 ../plugins/menu.c:842
 msgid "Run"
 msgstr ""
 
-#: ../src/configurator.c:51 ../plugins/menu.c:833
+#: ../src/configurator.c:51 ../plugins/menu.c:843
 msgid "Restart"
 msgstr ""
 
-#: ../src/configurator.c:52 ../plugins/menu.c:834
+#: ../src/configurator.c:52 ../plugins/menu.c:844
 msgid "Logout"
 msgstr ""
 
@@ -63,139 +63,139 @@ msgstr ""
 msgid "_Browse"
 msgstr ""
 
-#: ../src/panel.c:1021
+#: ../src/panel.c:1030
 msgid "There is no room for another panel. All the edges are taken."
 msgstr ""
 
-#: ../src/panel.c:1048
+#: ../src/panel.c:1057
 msgid ""
 "Really delete this panel?\n"
 "<b>Warning: This can not be recovered.</b>"
 msgstr ""
 
-#: ../src/panel.c:1050
+#: ../src/panel.c:1059
 msgid "Confirm"
 msgstr ""
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/panel.c:1085
+#: ../src/panel.c:1094
 msgid "translator-credits"
 msgstr ""
 
-#: ../src/panel.c:1090
+#: ../src/panel.c:1099
 msgid "LXPanel"
 msgstr ""
 
-#: ../src/panel.c:1108
+#: ../src/panel.c:1117
 msgid "Copyright (C) 2008-2014"
 msgstr ""
 
-#: ../src/panel.c:1109
+#: ../src/panel.c:1118
 msgid "Desktop panel for LXDE project"
 msgstr ""
 
-#: ../src/panel.c:1151
+#: ../src/panel.c:1160
 #, c-format
 msgid "%s Settings"
 msgstr ""
 
-#: ../src/panel.c:1171
+#: ../src/panel.c:1180
 msgid "Add / Remove Panel Items"
 msgstr ""
 
-#: ../src/panel.c:1179
+#: ../src/panel.c:1188
 #, c-format
 msgid "Remove \"%s\" From Panel"
 msgstr ""
 
-#: ../src/panel.c:1191
+#: ../src/panel.c:1200
 msgid "Panel Settings"
 msgstr ""
 
-#: ../src/panel.c:1197
+#: ../src/panel.c:1206
 msgid "Create New Panel"
 msgstr ""
 
-#: ../src/panel.c:1203
+#: ../src/panel.c:1212
 msgid "Delete This Panel"
 msgstr ""
 
-#: ../src/panel.c:1214
+#: ../src/panel.c:1223
 msgid "About"
 msgstr ""
 
-#: ../src/panel.c:1221
+#: ../src/panel.c:1230
 msgid "Panel"
 msgstr ""
 
-#: ../src/panel.c:1406 ../src/panel.c:1414 ../data/ui/panel-pref.glade.h:22
+#: ../src/panel.c:1415 ../src/panel.c:1423 ../data/ui/panel-pref.glade.h:22
 msgid "Height:"
 msgstr ""
 
-#: ../src/panel.c:1407 ../src/panel.c:1413 ../data/ui/panel-pref.glade.h:21
+#: ../src/panel.c:1416 ../src/panel.c:1422 ../data/ui/panel-pref.glade.h:21
 msgid "Width:"
 msgstr ""
 
-#: ../src/panel.c:1408 ../data/ui/panel-pref.glade.h:13
+#: ../src/panel.c:1417 ../data/ui/panel-pref.glade.h:13
 msgid "Left"
 msgstr ""
 
-#: ../src/panel.c:1409 ../data/ui/panel-pref.glade.h:14
+#: ../src/panel.c:1418 ../data/ui/panel-pref.glade.h:14
 msgid "Right"
 msgstr ""
 
-#: ../src/panel.c:1415 ../data/ui/panel-pref.glade.h:12
+#: ../src/panel.c:1424 ../data/ui/panel-pref.glade.h:12
 msgid "Top"
 msgstr ""
 
-#: ../src/panel.c:1416 ../data/ui/panel-pref.glade.h:11
+#: ../src/panel.c:1425 ../data/ui/panel-pref.glade.h:11
 msgid "Bottom"
 msgstr ""
 
-#: ../src/panel.c:1701
+#: ../src/panel.c:1710
 #, c-format
 msgid "lxpanel %s - lightweight GTK2+ panel for UNIX desktops\n"
 msgstr ""
 
-#: ../src/panel.c:1702
+#: ../src/panel.c:1711
 #, c-format
 msgid "Command line options:\n"
 msgstr ""
 
-#: ../src/panel.c:1703
+#: ../src/panel.c:1712
 #, c-format
 msgid " --help      -- print this help and exit\n"
 msgstr ""
 
-#: ../src/panel.c:1704
+#: ../src/panel.c:1713
 #, c-format
 msgid " --version   -- print version and exit\n"
 msgstr ""
 
 #. g_print(_(" --log <number> -- set log level 0-5. 0 - none 5 - chatty\n"));
 #. g_print(_(" --configure -- launch configuration utility\n"));
-#: ../src/panel.c:1707
+#: ../src/panel.c:1716
 #, c-format
 msgid " --profile name -- use specified profile\n"
 msgstr ""
 
-#: ../src/panel.c:1709
+#: ../src/panel.c:1718
 #, c-format
 msgid " -h  -- same as --help\n"
 msgstr ""
 
-#: ../src/panel.c:1710
+#: ../src/panel.c:1719
 #, c-format
 msgid " -p  -- same as --profile\n"
 msgstr ""
 
-#: ../src/panel.c:1711
+#: ../src/panel.c:1720
 #, c-format
 msgid " -v  -- same as --version\n"
 msgstr ""
 
 #. g_print(_(" -C  -- same as --configure\n"));
-#: ../src/panel.c:1713
+#: ../src/panel.c:1722
 #, c-format
 msgid ""
 "\n"
@@ -711,19 +711,19 @@ msgstr ""
 msgid "Properties"
 msgstr ""
 
-#: ../plugins/menu.c:1196 ../plugins/menu.c:1209
+#: ../plugins/menu.c:1206 ../plugins/menu.c:1219
 msgid "Menu"
 msgstr ""
 
-#: ../plugins/menu.c:1197 ../plugins/dirmenu.c:358
+#: ../plugins/menu.c:1207 ../plugins/dirmenu.c:358
 msgid "Icon"
 msgstr ""
 
-#: ../plugins/menu.c:1198
+#: ../plugins/menu.c:1208
 msgid "Caption"
 msgstr ""
 
-#: ../plugins/menu.c:1210
+#: ../plugins/menu.c:1220
 msgid "Application Menu"
 msgstr ""
 
@@ -954,8 +954,8 @@ msgstr ""
 
 #. FIXME: display current level in tooltip. ex: "Volume Control: 80%"
 #. Display current level in tooltip.
-#: ../plugins/volume/volume.c:278 ../plugins/volumealsa/volumealsa.c:1360
-#: ../plugins/volumealsa/volumealsa.c:1967
+#: ../plugins/volume/volume.c:278 ../plugins/volumealsa/volumealsa.c:1350
+#: ../plugins/volumealsa/volumealsa.c:1970
 msgid "Volume control"
 msgstr ""
 
@@ -967,70 +967,71 @@ msgstr ""
 msgid "Volume"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:517
+#: ../plugins/volumealsa/volumealsa.c:514
 msgid "Could not get BlueZ interface"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:694
+#: ../plugins/volumealsa/volumealsa.c:691
 msgid "Could not connect to PulseAudio"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:704
+#: ../plugins/volumealsa/volumealsa.c:701
 msgid "Connecting Audio Device"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:709
+#: ../plugins/volumealsa/volumealsa.c:706
 #, c-format
 msgid "Connecting to Bluetooth audio device '%s'..."
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:720
+#: ../plugins/volumealsa/volumealsa.c:717
 #, c-format
 msgid "Failed to connect to device - %s. Try to connect again."
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:722 ../plugins/bluetooth/bluetooth.c:1058
-#: ../plugins/bluetooth/bluetooth.c:1153 ../plugins/bluetooth/bluetooth.c:1385
+#: ../plugins/volumealsa/volumealsa.c:719
+#: ../plugins/bluetooth/bluetooth.c:1110 ../plugins/bluetooth/bluetooth.c:1205
+#: ../plugins/bluetooth/bluetooth.c:1437
 msgid "_OK"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:1394
+#: ../plugins/volumealsa/volumealsa.c:1391
 #, c-format
 msgid "Unknown Volume Control %d"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:1629
+#: ../plugins/volumealsa/volumealsa.c:1639
 msgid "Analog"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:1639
+#: ../plugins/volumealsa/volumealsa.c:1649
 msgid "HDMI"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:1746
+#: ../plugins/volumealsa/volumealsa.c:1756
 msgid "USB Device Settings..."
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:1753
+#: ../plugins/volumealsa/volumealsa.c:1763
 msgid "No audio devices found"
 msgstr ""
 
 #. Create a check button as the child of the vertical box.
-#: ../plugins/volumealsa/volumealsa.c:1909
+#: ../plugins/volumealsa/volumealsa.c:1911
 msgid "Mute"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:2082
+#: ../plugins/volumealsa/volumealsa.c:2087
 msgid ""
 "Error, you need to install an application to configure the sound "
 "(pavucontrol, alsamixer ...)"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:2117
+#: ../plugins/volumealsa/volumealsa.c:2148
 msgid "Volume Control (ALSA)"
 msgstr ""
 
-#: ../plugins/volumealsa/volumealsa.c:2118
+#: ../plugins/volumealsa/volumealsa.c:2149
 msgid "Display and control volume for ALSA"
 msgstr ""
 
@@ -1906,100 +1907,117 @@ msgstr ""
 msgid "Show weather conditions for a location."
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:356
+#: ../plugins/dhcpcd-gtk/main.c:358
 msgid "Error creating new GIO Channel\n"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:361
+#: ../plugins/dhcpcd-gtk/main.c:363
 msgid "Error creating watch\n"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:368
+#: ../plugins/dhcpcd-gtk/main.c:370
 msgid "g_try_malloc\n"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:394
+#: ../plugins/dhcpcd-gtk/main.c:396
 #, c-format
 msgid "Status changed to %s"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:397
+#: ../plugins/dhcpcd-gtk/main.c:399
 msgid "Connection to dhcpcd lost"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:397
+#: ../plugins/dhcpcd-gtk/main.c:399
 msgid "dhcpcd not running"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:419
+#: ../plugins/dhcpcd-gtk/main.c:421
 #, c-format
 msgid "Connected to %s-%s"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:438
+#: ../plugins/dhcpcd-gtk/main.c:440
 msgid "dhcpcd connection lost"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:509
+#: ../plugins/dhcpcd-gtk/main.c:511
 msgid "Network event"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:552
+#: ../plugins/dhcpcd-gtk/main.c:554
 #, c-format
 msgid "dhcpcd WPA connection lost: %s"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:614
+#: ../plugins/dhcpcd-gtk/main.c:616
 #, c-format
 msgid "%s: Received scan results"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:636
+#: ../plugins/dhcpcd-gtk/main.c:638
 msgid "New Access Point"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:645
+#: ../plugins/dhcpcd-gtk/main.c:647
 msgid "New Access Points"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:680
+#: ../plugins/dhcpcd-gtk/main.c:682
 #, c-format
 msgid "%s: WPA status %s"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:792
+#: ../plugins/dhcpcd-gtk/main.c:794
 msgid "Connecting to dhcpcd ..."
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:798
+#: ../plugins/dhcpcd-gtk/main.c:800
 msgid "Connecting ..."
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:841
+#: ../plugins/dhcpcd-gtk/main.c:843
 msgid "WiFi Networks (dhcpcdui)"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/main.c:842
+#: ../plugins/dhcpcd-gtk/main.c:844
 msgid "Control for dhcpcd network interface"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/menu.c:313
+#: ../plugins/dhcpcd-gtk/menu.c:77
+#, c-format
+msgid "Do you want to disconnect from the Wi-Fi network '%s'?"
+msgstr ""
+
+#: ../plugins/dhcpcd-gtk/menu.c:78
+msgid "Disconnect Wi-Fi Network"
+msgstr ""
+
+#: ../plugins/dhcpcd-gtk/menu.c:339
 msgid "No APs found - scanning..."
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/menu.c:433
+#: ../plugins/dhcpcd-gtk/menu.c:486 ../plugins/dhcpcd-gtk/menu.c:503
 msgid "No wireless interfaces found"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/menu.c:528
+#: ../plugins/dhcpcd-gtk/menu.c:494
+msgid "Turn On Wi-Fi"
+msgstr ""
+
+#: ../plugins/dhcpcd-gtk/menu.c:532
+msgid "Turn Off Wi-Fi"
+msgstr ""
+
+#: ../plugins/dhcpcd-gtk/menu.c:611
 msgid "_Preferences"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/menu.c:542
+#: ../plugins/dhcpcd-gtk/menu.c:625
 msgid "_About"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/menu.c:550
+#: ../plugins/dhcpcd-gtk/menu.c:633
 msgid "_Quit"
 msgstr ""
 
@@ -2086,249 +2104,276 @@ msgstr ""
 msgid "Error enabling network"
 msgstr ""
 
-#: ../plugins/dhcpcd-gtk/wpa.c:142
+#: ../plugins/dhcpcd-gtk/wpa.c:113 ../plugins/dhcpcd-gtk/wpa.c:118
+#: ../plugins/dhcpcd-gtk/wpa.c:123
+msgid "Error disconnecting network"
+msgstr ""
+
+#: ../plugins/dhcpcd-gtk/wpa.c:113
+msgid "Could not find SSID to disconnect"
+msgstr ""
+
+#: ../plugins/dhcpcd-gtk/wpa.c:118
+msgid "Could not remove network"
+msgstr ""
+
+#: ../plugins/dhcpcd-gtk/wpa.c:123
+msgid "Could not write configuration"
+msgstr ""
+
+#: ../plugins/dhcpcd-gtk/wpa.c:164
 msgid "Pre Shared Key:"
 msgstr ""
 
-#: ../plugins/ejecter/ejecter.c:442
+#: ../plugins/ejecter/ejecter.c:451
 #, c-format
 msgid "%s was removed without ejecting"
 msgstr ""
 
-#: ../plugins/ejecter/ejecter.c:443
+#: ../plugins/ejecter/ejecter.c:452
 msgid "Please use menu to eject before removal"
 msgstr ""
 
-#: ../plugins/ejecter/ejecter.c:481
+#: ../plugins/ejecter/ejecter.c:489
 #, c-format
 msgid "%s has been ejected"
 msgstr ""
 
-#: ../plugins/ejecter/ejecter.c:482
+#: ../plugins/ejecter/ejecter.c:490
 msgid "It is now safe to remove the device"
 msgstr ""
 
-#: ../plugins/ejecter/ejecter.c:551
+#: ../plugins/ejecter/ejecter.c:676
 msgid "No ejectable devices"
 msgstr ""
 
-#: ../plugins/ejecter/ejecter.c:700
+#: ../plugins/ejecter/ejecter.c:827
 msgid "Select a drive in menu to eject safely"
 msgstr ""
 
-#: ../plugins/ejecter/ejecter.c:739
+#: ../plugins/ejecter/ejecter.c:866
 msgid "Ejecter"
 msgstr ""
 
-#: ../plugins/ejecter/ejecter.c:740
+#: ../plugins/ejecter/ejecter.c:867
 msgid "Ejects mounted drives"
 msgstr ""
 
 #. create the dialog, asking user to accept the pairing
-#: ../plugins/bluetooth/bluetooth.c:920
+#: ../plugins/bluetooth/bluetooth.c:969
 #, c-format
 msgid "Do you accept pairing from device '%s'?"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:921
+#: ../plugins/bluetooth/bluetooth.c:970
 msgid "Pairing Request"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1043
+#: ../plugins/bluetooth/bluetooth.c:1095
 #, c-format
 msgid "Pairing Device '%s'"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1050
+#: ../plugins/bluetooth/bluetooth.c:1102
 msgid "Pairing request sent to device - waiting for response..."
 msgstr ""
 
 #. add the buttons
-#: ../plugins/bluetooth/bluetooth.c:1057 ../plugins/bluetooth/bluetooth.c:1152
-#: ../plugins/bluetooth/bluetooth.c:1306
+#: ../plugins/bluetooth/bluetooth.c:1109 ../plugins/bluetooth/bluetooth.c:1204
+#: ../plugins/bluetooth/bluetooth.c:1358
 msgid "_Cancel"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1071
+#: ../plugins/bluetooth/bluetooth.c:1123
 #, c-format
 msgid "Pairing failed - %s"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1080
+#: ../plugins/bluetooth/bluetooth.c:1132
 msgid "Pairing successful - creating connection..."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1087
+#: ../plugins/bluetooth/bluetooth.c:1139
 msgid "Connected successfully"
-msgstr ""
-
-#: ../plugins/bluetooth/bluetooth.c:1094
-#, c-format
-msgid "Connection failed - %s. Try to connect manually."
-msgstr ""
-
-#: ../plugins/bluetooth/bluetooth.c:1102
-#, c-format
-msgid "Please enter code '%s' on device '%s'"
-msgstr ""
-
-#: ../plugins/bluetooth/bluetooth.c:1110
-#, c-format
-msgid "Please confirm that device '%s' is showing the code '%s' to connect"
-msgstr ""
-
-#: ../plugins/bluetooth/bluetooth.c:1120
-#, c-format
-msgid "Please enter PIN code for device '%s'"
-msgstr ""
-
-#: ../plugins/bluetooth/bluetooth.c:1133
-msgid "Waiting for response from device..."
-msgstr ""
-
-#: ../plugins/bluetooth/bluetooth.c:1141
-msgid "Pairing Requested"
 msgstr ""
 
 #: ../plugins/bluetooth/bluetooth.c:1146
 #, c-format
-msgid "Device '%s' has requested a pairing. Do you accept the request?"
+msgid "Connection failed - %s. Try to connect manually."
+msgstr ""
+
+#: ../plugins/bluetooth/bluetooth.c:1154
+#, c-format
+msgid "Please enter code '%s' on device '%s'"
 msgstr ""
 
 #: ../plugins/bluetooth/bluetooth.c:1162
 #, c-format
+msgid "Please confirm that device '%s' is showing the code '%s' to connect"
+msgstr ""
+
+#: ../plugins/bluetooth/bluetooth.c:1172
+#, c-format
+msgid "Please enter PIN code for device '%s'"
+msgstr ""
+
+#: ../plugins/bluetooth/bluetooth.c:1185
+msgid "Waiting for response from device..."
+msgstr ""
+
+#: ../plugins/bluetooth/bluetooth.c:1193
+msgid "Pairing Requested"
+msgstr ""
+
+#: ../plugins/bluetooth/bluetooth.c:1198
+#, c-format
+msgid "Device '%s' has requested a pairing. Do you accept the request?"
+msgstr ""
+
+#: ../plugins/bluetooth/bluetooth.c:1214
+#, c-format
 msgid "Rejecting pairing..."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1169
+#: ../plugins/bluetooth/bluetooth.c:1221
 #, c-format
 msgid "Removal of pairing failed - %s. Remove the device manually."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1177
+#: ../plugins/bluetooth/bluetooth.c:1229
 msgid "Paired successfully. Use the audio menu to select as output device."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1184
+#: ../plugins/bluetooth/bluetooth.c:1236
 msgid ""
 "Paired successfully, but this device has no services which can be used with "
 "Raspberry Pi."
 msgstr ""
 
 #. create the window
-#: ../plugins/bluetooth/bluetooth.c:1297
+#: ../plugins/bluetooth/bluetooth.c:1349
 msgid "Add New Device"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1297 ../plugins/bluetooth/bluetooth.c:1351
+#: ../plugins/bluetooth/bluetooth.c:1349 ../plugins/bluetooth/bluetooth.c:1403
 #, c-format
 msgid "Remove Device"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1307
+#: ../plugins/bluetooth/bluetooth.c:1359
 msgid "_Pair"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1307
+#: ../plugins/bluetooth/bluetooth.c:1359
 msgid "_Remove"
 msgstr ""
 
 #. add a label
-#: ../plugins/bluetooth/bluetooth.c:1313
+#: ../plugins/bluetooth/bluetooth.c:1365
 msgid "Searching for Bluetooth devices..."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1313
+#: ../plugins/bluetooth/bluetooth.c:1365
 msgid "Paired Bluetooth devices"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1352
+#: ../plugins/bluetooth/bluetooth.c:1404
 #, c-format
 msgid "Removing paired device '%s'..."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1352
+#: ../plugins/bluetooth/bluetooth.c:1404
 #, c-format
 msgid "Removal failed - %s"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1356
+#: ../plugins/bluetooth/bluetooth.c:1408
 #, c-format
 msgid "Connect Device"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1357
+#: ../plugins/bluetooth/bluetooth.c:1409
 #, c-format
 msgid "Connecting to device '%s'..."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1357
+#: ../plugins/bluetooth/bluetooth.c:1409
 #, c-format
 msgid "Connection failed - %s"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1361
+#: ../plugins/bluetooth/bluetooth.c:1413
 #, c-format
 msgid "Disconnect Device"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1362
+#: ../plugins/bluetooth/bluetooth.c:1414
 #, c-format
 msgid "Disconnecting from device '%s'..."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1362
+#: ../plugins/bluetooth/bluetooth.c:1414
 #, c-format
 msgid "Disconnection failed - %s"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1445
+#: ../plugins/bluetooth/bluetooth.c:1497
 msgid "Use the audio menu to connect to this device"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1447
+#: ../plugins/bluetooth/bluetooth.c:1499
 msgid "No usable services on this device"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1514
+#: ../plugins/bluetooth/bluetooth.c:1566
 msgid "Disconnect..."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1520
+#: ../plugins/bluetooth/bluetooth.c:1572
 msgid "Connect..."
 msgstr ""
 
 #. warn if no BT hardware detected
-#: ../plugins/bluetooth/bluetooth.c:1713
+#: ../plugins/bluetooth/bluetooth.c:1769
 msgid "No Bluetooth adapter found"
 msgstr ""
 
+#. add enable bt option
+#: ../plugins/bluetooth/bluetooth.c:1776
+msgid "Turn On Bluetooth"
+msgstr ""
+
+#. add disable bt option
+#: ../plugins/bluetooth/bluetooth.c:1785
+msgid "Turn Off Bluetooth"
+msgstr ""
+
 #. discoverable toggle
-#: ../plugins/bluetooth/bluetooth.c:1720
+#: ../plugins/bluetooth/bluetooth.c:1793
 msgid "Stop Discoverable"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1721
+#: ../plugins/bluetooth/bluetooth.c:1794
 msgid "Make Discoverable"
 msgstr ""
 
 #. add and remove dialogs
-#: ../plugins/bluetooth/bluetooth.c:1728
+#: ../plugins/bluetooth/bluetooth.c:1801
 msgid "Add Device..."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1731
+#: ../plugins/bluetooth/bluetooth.c:1804
 msgid "Remove Device..."
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1810
+#: ../plugins/bluetooth/bluetooth.c:1884
 msgid "Manage Bluetooth devices"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1845
+#: ../plugins/bluetooth/bluetooth.c:1919
 msgid "Bluetooth"
 msgstr ""
 
-#: ../plugins/bluetooth/bluetooth.c:1846
+#: ../plugins/bluetooth/bluetooth.c:1920
 msgid "Manages Bluetooth devices"
 msgstr ""
