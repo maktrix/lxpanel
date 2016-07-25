@@ -749,12 +749,6 @@ pass_signal(GtkWidget *widget, GdkEventButton *event, menup *m)
     return TRUE;
 }
 
-#ifdef NEW_BUTTON
-#define EXTRA_SIZE 15
-#else
-#define EXTRA_SIZE 0
-#endif
-
 static GtkWidget *
 make_button(menup *m, const gchar *fname, const gchar *name, GdkColor* tint, GtkWidget *menu)
 {
@@ -765,7 +759,9 @@ make_button(menup *m, const gchar *fname, const gchar *name, GdkColor* tint, Gtk
     ENTER;
     m->menu = menu;
     m->btn = gtk_button_new();
-#ifdef NEW_BUTTON
+
+#define HIDE_OUTLINE
+#ifdef HIDE_OUTLINE
     gtk_button_set_relief (GTK_BUTTON (m->btn), GTK_RELIEF_NONE);
 #endif
     gtk_container_set_border_width(GTK_CONTAINER(m->btn), 0);
@@ -786,9 +782,9 @@ make_button(menup *m, const gchar *fname, const gchar *name, GdkColor* tint, Gtk
             pixbuf = gdk_pixbuf_new_from_file_at_scale(m->fname, -1, panel_get_icon_size(m->panel) - ICON_BUTTON_TRIM, TRUE, NULL);
         }
         m->icon = gtk_image_new_from_pixbuf(pixbuf);
-        gtk_misc_set_padding(GTK_MISC(m->icon), EXTRA_SIZE, 0);
         gtk_misc_set_alignment (GTK_MISC (m->icon), 0.5, 0.5);
-        spacing = panel_get_icon_size (m->panel);
+        gtk_widget_size_request (GTK_WIDGET (m->icon), &req);
+        spacing = req.width + ICON_BUTTON_TRIM;
         g_object_unref(pixbuf);
         gtk_box_pack_start(GTK_BOX(container), m->icon, FALSE, FALSE, 0);
     }
@@ -830,7 +826,7 @@ make_button(menup *m, const gchar *fname, const gchar *name, GdkColor* tint, Gtk
 
     gtk_widget_show_all(m->btn);
 
-    panel_icon_grid_set_geometry(PANEL_ICON_GRID(m->grid), panel_get_orientation(m->panel), spacing + EXTRA_SIZE * 2,
+    panel_icon_grid_set_geometry(PANEL_ICON_GRID(m->grid), panel_get_orientation(m->panel), spacing,
         panel_get_icon_size(m->panel), 0, 0, panel_get_height(m->panel));
 
     gtk_container_add(GTK_CONTAINER(m->grid), m->btn);
@@ -1171,7 +1167,8 @@ static gboolean apply_config(GtkWidget *p)
         gtk_misc_set_padding (GTK_MISC (m->icon), 0, 0);
         gtk_misc_set_alignment (GTK_MISC (m->icon), 0.5, 0.5);
         g_object_unref(pixbuf);
-        spacing += panel_get_icon_size(m->panel);
+        gtk_widget_size_request (m->icon, &req);
+        spacing += req.width + ICON_BUTTON_TRIM;
     }
     else gtk_image_set_from_pixbuf (GTK_IMAGE(m->icon), NULL);
 
