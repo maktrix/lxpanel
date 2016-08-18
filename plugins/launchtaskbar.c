@@ -356,10 +356,14 @@ static gboolean launchbutton_press_event(GtkWidget * widget, GdkEventButton * ev
 
         if (event->button == 1 && event->type == GDK_BUTTON_PRESS) /* left button */
         {
+            /* deal with the case where the pointer was in the gap between two buttons */
+            if (ltbp->lastb == NULL) return TRUE;
+
             if (ltbp->lastb->fi == NULL)  /* The bootstrap button */
                 lxpanel_plugin_show_config_dialog(ltbp->lastb->p->plugin);
             else
                 lxpanel_launch_path(p, fm_file_info_get_path(ltbp->lastb->fi));
+            ltbp->lastb = NULL;
             return TRUE;
         }
         return FALSE;
@@ -1522,7 +1526,7 @@ static void launchtaskbar_panel_configuration_changed(LXPanel *panel, GtkWidget 
             {
                 gtk_image_set_from_pixbuf(GTK_IMAGE(tk->image), pixbuf);
                 gtk_misc_set_alignment (GTK_MISC(tk->image), 0.5, 0.5);
-                gtk_misc_set_padding (GTK_MISC(tk->image), 0, 0);
+                gtk_misc_set_padding (GTK_MISC(tk->image), 2, 0);
                 g_object_unref(pixbuf);
             }
         }
@@ -2854,7 +2858,7 @@ static void task_build_gui(LaunchTaskBarPlugin * tb, Task * tk)
     /* Create an image to contain the application icon and add it to the box. */
     GdkPixbuf* pixbuf = task_update_icon(tb, tk, None);
     tk->image = gtk_image_new_from_pixbuf(pixbuf);
-    gtk_misc_set_padding(GTK_MISC(tk->image), 0, 0);
+    gtk_misc_set_padding(GTK_MISC(tk->image), 2, 0);
     gtk_misc_set_alignment(GTK_MISC(tk->image), 0.5, 0.5);
     g_object_unref(pixbuf);
     gtk_widget_show(tk->image);
