@@ -824,6 +824,8 @@ make_button(menup *m, const gchar *fname, const gchar *name, GdkColor* tint, Gtk
     gtk_container_add(GTK_CONTAINER(m->btn), container);
     gtk_container_set_border_width(GTK_CONTAINER(m->btn), 0);
 
+    gtk_widget_set_tooltip_text (m->btn, _("Open applications menu"));
+
     gtk_widget_show_all(m->btn);
 
     panel_icon_grid_set_geometry(PANEL_ICON_GRID(m->grid), panel_get_orientation(m->panel), spacing,
