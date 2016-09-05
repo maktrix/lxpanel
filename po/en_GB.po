@@ -726,8 +726,8 @@ msgid "Properties"
 msgstr "Properties"
 
 #: ../plugins/menu.c:827
-msgid "Open applications menu"
-msgstr "Open applications menu"
+msgid "Click here to open applications menu"
+msgstr "Click here to open applications menu"
 
 #: ../plugins/menu.c:1219 ../plugins/menu.c:1232
 msgid "Menu"
