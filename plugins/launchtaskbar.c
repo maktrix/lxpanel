@@ -2503,6 +2503,7 @@ static gboolean taskbar_task_control_event(GtkWidget * widget, GdkEventButton * 
                      * the icon of the application window. */
                     GtkWidget * mi = gtk_image_menu_item_new_with_label(((tk_cursor->iconified) ?
                                 tk_cursor->name_iconified : tk_cursor->name));
+                    gtk_image_menu_item_set_always_show_image (GTK_IMAGE_MENU_ITEM (mi), TRUE);
                     GtkWidget * im = gtk_image_new_from_pixbuf(gtk_image_get_pixbuf(
                                 GTK_IMAGE(tk_cursor->image)));
                     gtk_image_menu_item_set_image(GTK_IMAGE_MENU_ITEM(mi), im);

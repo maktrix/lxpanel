@@ -465,6 +465,7 @@ static GtkWidget* create_item(MenuCacheItem *item, menup *m)
         g_free(mpath);
         fm_path_unref(path);
         mi = gtk_image_menu_item_new_with_mnemonic( menu_cache_item_get_name(item) );
+        gtk_image_menu_item_set_always_show_image (GTK_IMAGE_MENU_ITEM (mi), TRUE);
         g_object_set_qdata_full(G_OBJECT(mi), SYS_MENU_ITEM_ID, fi,
                                 (GDestroyNotify)fm_file_info_unref);
         img = gtk_image_new();
@@ -901,6 +902,7 @@ read_item(menup *m, config_setting_t *s)
     }
     else
         goto error;
+    gtk_image_menu_item_set_always_show_image (GTK_IMAGE_MENU_ITEM (item), TRUE);
     gtk_container_set_border_width(GTK_CONTAINER(item), 0);
     if (fname) {
         GtkWidget *img;
@@ -1043,6 +1045,7 @@ read_submenu(menup *m, config_setting_t *s, int as_item)
     if (as_item == 2) return menu;
     if (as_item) {
         mi = gtk_image_menu_item_new_with_label(name);
+        gtk_image_menu_item_set_always_show_image (GTK_IMAGE_MENU_ITEM (mi), TRUE);
         if (fname) {
             GtkWidget *img;
             char *expanded = expand_tilda(fname);
