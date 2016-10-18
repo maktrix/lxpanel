@@ -2013,8 +2013,8 @@ msgid "Connecting ..."
 msgstr "Connecting ..."
 
 #: ../plugins/dhcpcd-gtk/main.c:847
-msgid "WiFi Networks (dhcpcdui)"
-msgstr "WiFi Networks (dhcpcdui)"
+msgid "Wireless & Wired Network"
+msgstr "Wireless & Wired Network"
 
 #: ../plugins/dhcpcd-gtk/main.c:848
 msgid "Control for dhcpcd network interface"

@@ -1981,7 +1981,7 @@ msgid "Connecting ..."
 msgstr ""
 
 #: ../plugins/dhcpcd-gtk/main.c:847
-msgid "WiFi Networks (dhcpcdui)"
+msgid "Wireless & Wired Network"
 msgstr ""
 
 #: ../plugins/dhcpcd-gtk/main.c:848
