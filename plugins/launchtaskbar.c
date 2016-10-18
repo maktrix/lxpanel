@@ -51,6 +51,7 @@
 #include <gdk-pixbuf-xlib/gdk-pixbuf-xlib.h>
 #include <gdk/gdk.h>
 #include <glib/gi18n.h>
+#include <gio/gdesktopappinfo.h>
 
 #include <libfm/fm-gtk.h>
 
