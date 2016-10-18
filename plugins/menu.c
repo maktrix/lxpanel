@@ -220,22 +220,6 @@ static void on_menu_item_map(GtkWidget *mi, menup *m)
 
             if (fm_icon == NULL)
                 fm_icon = _fm_icon = fm_icon_from_name("application-x-executable");
-
-            // hack to force fallback to other icon theme, instead of icon with shorter name in same theme...
-            gchar *ics = g_icon_to_string (G_ICON (fm_icon));
-            if (!strncmp (ics, ". GThemedIcon ", 14))
-            {
-                char buf[256];
-                sscanf (ics, ". GThemedIcon %s", buf);
-                FmIcon *new_icon = g_icon_new_for_string (buf, NULL);
-                if (new_icon)
-                {
-                    g_object_unref (fm_icon);
-                    fm_icon = new_icon;
-                }
-            }
-            if (ics) g_free (ics);
-
             icon = fm_pixbuf_from_icon_with_fallback(fm_icon, m->iconsize,
                                                          "application-x-executable");
             if (_fm_icon)
