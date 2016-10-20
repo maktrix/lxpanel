@@ -532,8 +532,7 @@ static LaunchButton *launchbutton_for_file_info(LaunchTaskBarPlugin * lb, FmFile
     }
 
     // check that the application in the desktop file is valid
-    const char *target = fm_file_info_get_target (fi);
-    if (g_desktop_app_info_new_from_filename (target) == NULL)
+    if (g_desktop_app_info_new (fm_file_info_get_name (fi)) == NULL)
     {
         g_warning("launchbar: application in desktop entry is not valid\n");
         return NULL;
